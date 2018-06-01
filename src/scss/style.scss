@@ -1,0 +1,211 @@
+$bg-color: #101320;
+$font-color: #EFEDEF;
+$primary-color: #c8292e;
+$secondary-color: #871C20;
+$medium-overlay: rgba(0, 0, 0, 0.5);
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$icon-size: 30px;
+
+body {
+    background: $bg-color;
+    color: $font-color;
+}
+
+.navbar {
+    border-bottom: $primary-color 2px solid;
+    opacity: 0.8;
+    background: $bg-color;
+    #phone-number-button {
+        background-color: $bg-color;
+        color: #EAEAEA;
+    }
+}
+
+#home-section {
+    background: url('../img/bulb4.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -180px;
+    min-height: 700px;
+
+    .dark-overlay {
+        background-color: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+    }
+
+    #hobson {
+        color: #c60000;
+        background: -webkit-linear-gradient(#fff, #c60000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+
+    #hobson strong {
+        text-shadow: 6px 2px 20px rgba(120, 120, 120, 0.6);
+    }
+
+    .home-inner {
+        padding-top: 150px;
+    }
+
+  
+    .contact-form {
+        background-color: $primary-color;
+        color: $font-color;
+    }
+
+    .learn-more-button {
+        background-color: $primary-color;
+        color: $font-color;
+    }
+
+    .fa {
+        color:$primary-color;
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: $icon-size;
+    }
+   
+}
+
+#home-icons {
+    .fa {
+        color:$primary-color;
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: $icon-size;
+    }
+    .home-icon-button {
+        // background-color: $primary-color;
+        color: $primary-color;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    .home-icon-button:hover {
+        background-color: $bg-color;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+#map-section {
+    background: url('../img/cable-clouds.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -180px;
+    min-height: 450px;
+    position: relative;
+    
+    img {
+        height: 300px;
+    }
+    .view-map-button {
+        color: $font-color;
+        background-color: #333;
+    }
+    #map-image {
+        box-shadow: 1px 1px 15px #333;
+    }
+}
+
+#main-footer {
+    background-color: $bg-color;
+    a {
+        color: $primary-color;
+    }
+    .footer-col {
+        max-height: 150px;
+    }
+    #fb-icon {
+        height: 60px;
+        
+    }
+}
+
+// ****************MEDIA QUERIES********************
+
+@media (max-width: 990px) {
+    .navbar {
+        opacity: 1;
+    }
+    #home-section {
+        .main-heading {
+            margin-top: -45px;
+            font-size: 70px;
+        }
+       
+        .learn-more-button {
+            display: none;
+        }
+    }
+    #home-icons {
+        margin-top: 50px;
+    }
+    #map-section {
+        min-height: 800px;
+        background-attachment: scroll;
+    }
+    
+}
+
+
+
+@media (max-width: 780px) {
+    #home-section {
+        .container { 
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .main-heading {
+            font-size: 55px;
+            text-align: center;
+        } 
+        .sub-heading {
+            text-align: center;
+        }       
+    }
+    #map-section {
+        .card-group {
+            flex-direction: column;
+        }
+        #service-map {
+            border-right: none;
+        }
+    }
+}
+
+@media (max-width: 535px) {
+   
+    #home-section {
+        .main-heading {
+            font-size: 45px;
+        }
+        .sub-heading {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    #home-section {
+        .main-heading {
+            font-size: 37px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #home-section {
+        .main-heading {
+            font-size: 30px;
+        }
+    }
+}
+
