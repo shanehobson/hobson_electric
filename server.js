@@ -13,8 +13,23 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 
 //load homepage
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.send('index.html');
+});
+
+//load about page
+app.get('/about', (req, res) => {
+    res.send('about.html');
+});
+
+//load commercial page
+app.get('/commercial', (req, res) => {
+    res.send('commercial.html');
+});
+
+//load residential page
+app.get('/residential', (req, res) => {
+    res.send('residential.html');
 });
 
 //middleware for parsing request body
