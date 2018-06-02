@@ -17,7 +17,7 @@ body {
   background-position: 0 -180px;
   min-height: 700px; }
   #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
