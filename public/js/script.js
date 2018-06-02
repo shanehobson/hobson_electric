@@ -55,7 +55,6 @@ document.getElementById("contact-form").addEventListener('submit', e => {
 
     //Insert success message in form body
     formBody.innerHTML = "<br><h4>Thank you for your message!</h4><br><h4>We'll get back to you as soon as possible. If this is an emergency, please call us at (765) 362-3756.</h4><br><br>";
-    // "<br><h5>Thank you for your message!</h5><br> We'll get back to you as soon as possible. If this is an emergency, please call (765) 362-3756.<br><br>";
 
     //send data
     sendData({
@@ -66,5 +65,6 @@ document.getElementById("contact-form").addEventListener('submit', e => {
     });    
 });
 
+//UI Functions and Event Listeners
 
 
