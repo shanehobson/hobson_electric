@@ -11,20 +11,22 @@ body {
     color: #EAEAEA; }
 
 #home-section {
-  background: url("../img/bulb4.jpg") no-repeat;
+  background: url("../img/bulb4.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 -180px;
-  min-height: 700px; }
+  min-height: 750px; }
   #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.35);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px; }
+    min-height: 800px; }
+  #home-section #hobson {
+    text-shadow: 8px 8px 20px black; }
   #home-section #hobson strong {
-    text-shadow: 6px 2px 20px rgba(0, 0, 0, 0.6); }
+    text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6); }
   #home-section .home-inner {
     padding-top: 150px; }
   #home-section .contact-form {
@@ -84,19 +86,34 @@ body {
   #main-footer #fb-icon {
     height: 60px; }
 
+@media (max-width: 1432px) {
+  #home-section {
+    background-attachment: scroll;
+    height: 900px; }
+  #home-icons .row {
+    margin-top: -200px; }
+  #map-section {
+    background-attachment: scroll; } }
+
 @media (max-width: 990px) {
   .navbar {
     opacity: 1; }
+  #home-section .container {
+    padding-right: 0px;
+    padding-left: 0px; }
   #home-section .main-heading {
-    margin-top: -45px;
+    margin-top: -70px;
+    margin-bottom: -30px;
     font-size: 70px; }
   #home-section .learn-more-button {
     display: none; }
-  #home-icons {
-    margin-top: 50px; }
+  #home-section .contact-form {
+    margin-top: -38px; }
   #map-section {
     min-height: 800px;
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+  #main-footer .container {
+    margin-top: -130px; } }
 
 @media (max-width: 780px) {
   #home-section .container {
@@ -112,6 +129,12 @@ body {
   #map-section #service-map {
     border-right: none; } }
 
+@media (max-width: 577px) {
+  #home-section {
+    height: 600px;
+    overflow: visible;
+    margin-bottom: 100px; } }
+
 @media (max-width: 535px) {
   #home-section .main-heading {
     font-size: 45px; }
@@ -121,7 +144,3 @@ body {
 @media (max-width: 460px) {
   #home-section .main-heading {
     font-size: 37px; } }
-
-@media (max-width: 375px) {
-  #home-section .main-heading {
-    font-size: 30px; } }
