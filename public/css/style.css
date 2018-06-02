@@ -17,7 +17,7 @@ body {
   background-position: 0 -180px;
   min-height: 700px; }
   #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
     top: 0;
     left: 0;
@@ -33,6 +33,9 @@ body {
   #home-section .learn-more-button {
     background-color: #c8292e;
     color: #EFEDEF; }
+  #home-section .send-message-button:hover {
+    cursor: pointer;
+    color: #c8292e; }
   #home-section .fa {
     color: #c8292e;
     background: #fff;
