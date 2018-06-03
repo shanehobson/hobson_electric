@@ -14,7 +14,6 @@ body {
   background: url("../img/bulb5.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 00;
   min-height: 750px; }
   #home-section .dark-overlay {
     background-color: rgba(0, 0, 0, 0.35);
@@ -63,12 +62,20 @@ body {
   text-decoration: none; }
 
 #map-section {
-  background: url("../img/sky.jpg") no-repeat;
+  background: url("../img/bulb5.jpg") no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: 0 -180px;
   min-height: 450px;
   position: relative; }
+  #map-section h3 {
+    font-size: 2rem;
+    font-weight: bold; }
+  #map-section p {
+    font-size: 1.3rem; }
+  #map-section h3, #map-section p {
+    color: #EFEDEF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); }
   #map-section img {
     height: 300px; }
   #map-section .view-map-button {
@@ -96,10 +103,7 @@ body {
 
 @media (max-width: 1432px) {
   #home-section {
-    background-attachment: scroll;
-    height: 900px; }
-  #home-icons .row {
-    margin-top: -200px; }
+    background-attachment: scroll; }
   #map-section {
     background-attachment: scroll; } }
 
@@ -115,8 +119,6 @@ body {
     font-size: 70px; }
   #home-section .learn-more-button {
     display: none; }
-  #home-section .contact-form {
-    margin-top: -38px; }
   #map-section {
     min-height: 800px;
     background-attachment: scroll; }
@@ -148,8 +150,7 @@ body {
 @media (max-width: 577px) {
   #home-section {
     height: 600px;
-    overflow: visible;
-    margin-bottom: 100px; } }
+    overflow: visible; } }
 
 @media (max-width: 535px) {
   #home-section .main-heading {
