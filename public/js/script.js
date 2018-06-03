@@ -65,9 +65,18 @@ document.querySelector('.customer-contact-form').addEventListener('submit', e =>
     });    
 });
 
-//Handle Pop Up Contact Form DOM Manipulation
-document.querySelector('#pop-up-opener').addEventListener('click', () => {
-    const contactForm = document.querySelector('.contact-form');
-    contactForm.classList.toggle('d-xl-block');
-});
+//Handle Pop Up Contact Form on Home Page
+function handlePopUp () {
+    const popUpOpener = document.querySelector('#pop-up-opener');
+    if (popUpOpener) {
+        popUpOpener.addEventListener('click', () => {
+            const contactForm = document.querySelector('.contact-form');
+            contactForm.classList.toggle('d-xl-block');
+        });
+    }
+}
+
+handlePopUp();
+
+
 
