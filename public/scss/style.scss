@@ -1,14 +1,10 @@
-//Variables
+//-------Variables--------//
 $bg-color: #101320;
 $font-color: #EFEDEF;
 $primary-color: #c8292e;
 $secondary-color: #871C20;
-$medium-overlay: rgba(0, 0, 0, 0.5);
-$dark-overlay: rgba(0, 0, 0, 0.35);
-$white-underlay: #FFF;
-$icon-size: 30px;
 
-//General Styles
+//---------General Styles--------//
 body {
     background: $bg-color;
     color: $font-color;
@@ -24,6 +20,16 @@ body {
     }
 }
 
+.learn-more-button {
+    background-color: $primary-color;
+    color: $font-color;
+}
+.learn-more-button:hover {
+    background-color: $font-color;
+    color: $primary-color;
+    box-shadow: 0 0 3px 2px red;
+}
+
 //-------Home Page Styles---------//
 #home-section {
     background: url('../img/bulb5.jpg') no-repeat;
@@ -31,35 +37,19 @@ body {
     background-attachment: fixed;
     min-height: 750px;
 
-    .dark-overlay {
-        background-color: $dark-overlay;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 800px;
-    }
-
     #hobson {
         text-shadow: 8px 8px 20px rgba(0, 0, 0, 1);
     }
-
     #hobson strong {
         text-shadow: 6px 6px 20px rgba(0, 0, 0, 1);
     }
-
     .home-inner {
         padding-top: 150px;
-        // height: 700;
-        // overflow: visible;
-    }
-
-  
+    }  
     .contact-form {
         background-color: $primary-color;
         color: $font-color;
     }
-
     .learn-more-button {
         background-color: $primary-color;
         color: $font-color;
@@ -73,31 +63,9 @@ body {
     .send-message-button:hover {
         cursor: pointer;
         color: $primary-color;
-    }
-
-    .fa {
-        color:$primary-color;
-        background: #fff;
-        padding: 4px;
-        border-radius: 5px;
-        font-size: $icon-size;
-    }
-   
+    }   
 }
-
-.learn-more-button {
-    background-color: $primary-color;
-    color: $font-color;
-}
-
 #home-icons {
-    .fa {
-        color:$primary-color;
-        background: #fff;
-        padding: 4px;
-        border-radius: 5px;
-        font-size: $icon-size;
-    }
     .home-icon-button {
         // background-color: $primary-color;
         color: $primary-color;
@@ -151,7 +119,6 @@ body {
     }
     #fb-icon {
         height: 60px;
-        
     }
 }
 
@@ -162,10 +129,6 @@ body {
     margin-top: 65px;
     background-color: $font-color;
 }
-.white-underlay {
-    background: $white-underlay;
-}
-
 #contact-modal .card {
     background-color: $primary-color;
     color: $font-color;
@@ -174,23 +137,19 @@ body {
     cursor: pointer;
     color: $primary-color;
 }
-.learn-more-button:hover {
-    background-color: $font-color;
-    color: $primary-color;
-    box-shadow: 0 0 3px 2px red;
-}
 
 // ****************MEDIA QUERIES********************
 @media (max-width: 1432px) {
     #home-section {
         background-attachment: scroll;
-        //  height: 900px;
     }
-    #home-icons .row {
-        // margin-top: -200px;
-    } 
     #map-section {
         background-attachment: scroll;
+    }
+    #about-section,
+    #residential-section,
+    #commercial-section {
+        min-height: 920px;
     }
 }
 
@@ -227,10 +186,7 @@ body {
     #main-footer .container {
         margin-top: -130px;
     }
-    
 }
-
-
 
 @media (max-width: 780px) {
     #home-section {
@@ -284,7 +240,6 @@ body {
 }
 
 @media (max-width: 535px) {
-   
     #home-section {
         .main-heading {
             font-size: 45px;

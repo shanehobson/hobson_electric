@@ -10,18 +10,20 @@ body {
     background-color: #101320;
     color: #EAEAEA; }
 
+.learn-more-button {
+  background-color: #c8292e;
+  color: #EFEDEF; }
+
+.learn-more-button:hover {
+  background-color: #EFEDEF;
+  color: #c8292e;
+  box-shadow: 0 0 3px 2px red; }
+
 #home-section {
   background: url("../img/bulb5.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 750px; }
-  #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.35);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 800px; }
   #home-section #hobson {
     text-shadow: 8px 8px 20px black; }
   #home-section #hobson strong {
@@ -42,23 +44,6 @@ body {
   #home-section .send-message-button:hover {
     cursor: pointer;
     color: #c8292e; }
-  #home-section .fa {
-    color: #c8292e;
-    background: #fff;
-    padding: 4px;
-    border-radius: 5px;
-    font-size: 30px; }
-
-.learn-more-button {
-  background-color: #c8292e;
-  color: #EFEDEF; }
-
-#home-icons .fa {
-  color: #c8292e;
-  background: #fff;
-  padding: 4px;
-  border-radius: 5px;
-  font-size: 30px; }
 
 #home-icons .home-icon-button {
   color: #c8292e;
@@ -108,9 +93,6 @@ body {
   margin-top: 65px;
   background-color: #EFEDEF; }
 
-.white-underlay {
-  background: #FFF; }
-
 #contact-modal .card {
   background-color: #c8292e;
   color: #EFEDEF; }
@@ -119,16 +101,15 @@ body {
   cursor: pointer;
   color: #c8292e; }
 
-.learn-more-button:hover {
-  background-color: #EFEDEF;
-  color: #c8292e;
-  box-shadow: 0 0 3px 2px red; }
-
 @media (max-width: 1432px) {
   #home-section {
     background-attachment: scroll; }
   #map-section {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+  #about-section,
+  #residential-section,
+  #commercial-section {
+    min-height: 920px; } }
 
 @media (max-width: 990px) {
   .navbar {
