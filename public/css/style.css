@@ -11,10 +11,10 @@ body {
     color: #EAEAEA; }
 
 #home-section {
-  background: url("../img/bulb4.png") no-repeat;
+  background: url("../img/bulb5.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 0 -180px;
+  background-position: 00;
   min-height: 750px; }
   #home-section .dark-overlay {
     background-color: rgba(0, 0, 0, 0.35);
@@ -26,7 +26,7 @@ body {
   #home-section #hobson {
     text-shadow: 8px 8px 20px black; }
   #home-section #hobson strong {
-    text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6); }
+    text-shadow: 6px 6px 20px black; }
   #home-section .home-inner {
     padding-top: 150px; }
   #home-section .contact-form {
@@ -63,9 +63,9 @@ body {
   text-decoration: none; }
 
 #map-section {
-  background: url("../img/cable-clouds.jpg") no-repeat;
+  background: url("../img/sky.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: 0 -180px;
   min-height: 450px;
   position: relative; }
@@ -85,6 +85,14 @@ body {
     max-height: 150px; }
   #main-footer #fb-icon {
     height: 60px; }
+
+#about-section,
+#residential-section,
+#commercial-section {
+  margin-top: 65px; }
+
+.white-underlay {
+  background: #FFF; }
 
 @media (max-width: 1432px) {
   #home-section {
@@ -112,6 +120,10 @@ body {
   #map-section {
     min-height: 800px;
     background-attachment: scroll; }
+  #about-section,
+  #residential-section,
+  #commercial-section {
+    min-height: 800px; }
   #main-footer .container {
     margin-top: -130px; } }
 
@@ -127,7 +139,11 @@ body {
   #map-section .card-group {
     flex-direction: column; }
   #map-section #service-map {
-    border-right: none; } }
+    border-right: none; }
+  #about-section,
+  #residential-section,
+  #commercial-section {
+    min-height: 1100px; } }
 
 @media (max-width: 577px) {
   #home-section {
