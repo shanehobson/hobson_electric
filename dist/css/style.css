@@ -86,6 +86,8 @@ body {
     max-height: 150px; }
   #main-footer #fb-icon {
     height: 60px; }
+  #main-footer #pop-up-button2 {
+    cursor: pointer; }
 
 #about-section,
 #residential-section,
