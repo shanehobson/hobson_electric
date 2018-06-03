@@ -65,6 +65,9 @@ document.querySelector('.customer-contact-form').addEventListener('submit', e =>
     });    
 });
 
-//UI Functions and Event Listeners
-
+//Handle Pop Up Contact Form DOM Manipulation
+document.querySelector('#pop-up-opener').addEventListener('click', () => {
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.classList.toggle('d-none');
+});
 
