@@ -67,17 +67,14 @@ document.querySelector('.customer-contact-form').addEventListener('submit', func
 });
 
 //Handle Pop Up Contact Form on Home Page
-var buttonTop = document.getElementById('pop-up-opener');
-var buttonBottom = document.getElementById('pop-up-opener2');
-
 function handlePopUp(button) {
     if (button) {
         button.addEventListener('click', function () {
             var contactForm = document.querySelector('.contact-form');
             contactForm.classList.toggle('d-xl-block');
+            button.classList.toggle('d-xl-inline-block');
         });
     }
 }
 
-handlePopUp(buttonTop);
-handlePopUp(buttonBottom);
+handlePopUp(document.getElementById('pop-up-opener'));

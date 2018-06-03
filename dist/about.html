@@ -69,7 +69,8 @@
                 <div class="row footer-row">
                 <div class="col-md-4 text-center pt-3 footer-col">
                             <p>
-                            <a href="#">hobson75@gmail.com</a><br>
+                            <!-- Button to call Contact Modal -->
+                            <a href="#" data-toggle="modal" data-target="#contact-modal">hobson75@gmail.com</a><br>
                             765-362-3756 (Phone)<br>
                             756-364-0583 (Fax)
                             </p>
@@ -82,19 +83,22 @@
                             </p>
                 </div>
                     <div class="col-md-4 text-center py-4 footer-col">
-                        <a href="#"><img src="img/fbook.png" id="fb-icon" alt=""></a>
+                        <a href="https://www.facebook.com/pages/Hobson-Electric-Inc/158690374164799"><img src="img/fbook.png" id="fb-icon" alt=""></a>
                     </div>
                 </div>
             </div>
     </footer>
 
-     <!-- Contact Modal -->
-     <div class="modal fade" id="contact-modal">
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-modal">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="card text-center card-form">
                         <div class="card-body" id="form-body">
-                            <h4>Contact Us Today!</h>
+                                <button type="button" class="close text-light" style="cursor:pointer" aria-label="Close">
+                                        <span aria-hidden="true" data-dismiss="modal" data-target="#contact-modal">&times;</span>
+                                </button>
+                            <h4>Contact Us Today!</h4>
                             <p></p>
                             <form class="contact-form-container customer-contact-form">
                                 <div class="form-group">
