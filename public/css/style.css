@@ -79,12 +79,12 @@ body {
   position: relative; }
   #map-section h3 {
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); }
   #map-section p {
     font-size: 1.3rem; }
   #map-section h3, #map-section p {
-    color: #EFEDEF;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); }
+    color: #EFEDEF; }
   #map-section img {
     height: 300px; }
   #map-section .view-map-button {
@@ -135,7 +135,8 @@ body {
     opacity: 1; }
   #home-section .container {
     padding-right: 0px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    padding-bottom: 10px; }
   #home-section .main-heading {
     margin-top: -70px;
     margin-bottom: -30px;
@@ -165,15 +166,22 @@ body {
     flex-direction: column; }
   #map-section #service-map {
     border-right: none; }
+  #map-section h3 {
+    text-shadow: none; }
+  #map-section p {
+    font-size: 1rem; }
   #about-section,
   #residential-section,
   #commercial-section {
     min-height: 1100px; } }
 
 @media (max-width: 577px) {
-  #home-section {
-    height: 600px;
-    overflow: visible; } }
+  #home-section .contact-form {
+    height: 545px; }
+  #home-section .container {
+    padding-bottom: 0; }
+  #map-section {
+    text-align: center; } }
 
 @media (max-width: 535px) {
   #home-section .main-heading {
@@ -183,4 +191,6 @@ body {
 
 @media (max-width: 460px) {
   #home-section .main-heading {
-    font-size: 37px; } }
+    font-size: 37px; }
+  #map-section {
+    height: 800px; } }
