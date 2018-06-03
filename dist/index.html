@@ -48,7 +48,7 @@
                         <p class="lead mt-5 sub-heading" id="header-description"><strong>Proudly serving West Central Indiana since 1999.</strong></p>
                         <div class="mt-5"></div>
                         <!-- Button to Open Contact Form -->
-                        <a href="#" id="pop-up-opener" class="btn btn-lg learn-more-button d-none d-xl-inline-block" data-toggle="modal" data-target="#contact-modal">Click Here to Contact Us Today!</a>
+                        <a href="#" id="pop-up-opener" class="btn btn-lg learn-more-button d-none d-xl-inline-block">Click Here to Contact Us Today!</a>
                     </div>
                     <div class="col-lg-5 contact-form-container">
                         <div class="card text-center card-form contact-form d-block d-xl-none">
@@ -137,7 +137,8 @@
                 <div class="row footer-row">
                     <div class="col-md-4 text-center pt-3 footer-col">
                         <p>
-                        <a href="#" id="pop-up-opener2">hobson75@gmail.com</a><br>
+                        <!-- Button to call Contact Modal -->
+                        <a href="#" data-toggle="modal" data-target="#contact-modal">hobson75@gmail.com</a><br>
                         765-362-3756 (Phone)<br>
                         756-364-0583 (Fax)
                         </p>
@@ -155,6 +156,38 @@
                 </div>
             </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="card text-center card-form">
+                        <div class="card-body" id="form-body">
+                                <button type="button" class="close text-light" style="cursor:pointer" aria-label="Close">
+                                        <span aria-hidden="true" data-dismiss="modal" data-target="#contact-modal">&times;</span>
+                                </button>
+                            <h4>Contact Us Today!</h4>
+                            <p></p>
+                            <form class="contact-form-container customer-contact-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Name" id="form-name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" id="form-number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Email" id="form-email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" cols="30" rows="4" class="form-control form-control-lg" placeholder="Message" id="form-message"></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-outline-light btn-block send-message-button" value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
