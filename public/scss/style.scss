@@ -64,7 +64,12 @@ body {
         background-color: $primary-color;
         color: $font-color;
     }
-
+    .learn-more-button:hover {
+        background-color: $font-color;
+        color: $primary-color;
+        box-shadow: 0 0 3px 2px red;
+        text-decoration: none;
+    }
     .send-message-button:hover {
         cursor: pointer;
         color: $primary-color;
@@ -78,6 +83,11 @@ body {
         font-size: $icon-size;
     }
    
+}
+
+.learn-more-button {
+    background-color: $primary-color;
+    color: $font-color;
 }
 
 #home-icons {
@@ -150,9 +160,24 @@ body {
 #residential-section,
 #commercial-section {
     margin-top: 65px;
+    background-color: $font-color;
 }
 .white-underlay {
     background: $white-underlay;
+}
+
+#contact-modal .card {
+    background-color: $primary-color;
+    color: $font-color;
+}
+#contact-modal .send-message-button:hover {
+    cursor: pointer;
+    color: $primary-color;
+}
+.learn-more-button:hover {
+    background-color: $font-color;
+    color: $primary-color;
+    box-shadow: 0 0 3px 2px red;
 }
 
 // ****************MEDIA QUERIES********************

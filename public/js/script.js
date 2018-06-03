@@ -14,12 +14,12 @@ function sendData(data) {
     urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
 
     // Define what happens on successful data submission
-    XHR.addEventListener('load', event => {
+    XHR.addEventListener('load', e => {
         console.log('Yeah! Data sent and response loaded.');
     });
 
     // Define what happens in case of error
-    XHR.addEventListener('error', event => {
+    XHR.addEventListener('error', e => {
         alert('Oops! Something goes wrong.');
     });
 
@@ -35,7 +35,7 @@ function sendData(data) {
 
 
 //Event Listener for Form Submit
-document.getElementById("contact-form").addEventListener('submit', e => {
+document.querySelector('.customer-contact-form').addEventListener('submit', e => {
     e.preventDefault();
     // console.log(e);
     
@@ -56,7 +56,7 @@ document.getElementById("contact-form").addEventListener('submit', e => {
     //Insert success message in form body
     formBody.innerHTML = "<br><h4>Thank you for your message!</h4><br><h4>We'll get back to you as soon as possible. If this is an emergency, please call us at (765) 362-3756.</h4><br><br>";
 
-    //send data
+    //call send data function, passing in object with form data
     sendData({
         name: name,
         number: number,

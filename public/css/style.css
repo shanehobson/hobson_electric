@@ -34,6 +34,11 @@ body {
   #home-section .learn-more-button {
     background-color: #c8292e;
     color: #EFEDEF; }
+  #home-section .learn-more-button:hover {
+    background-color: #EFEDEF;
+    color: #c8292e;
+    box-shadow: 0 0 3px 2px red;
+    text-decoration: none; }
   #home-section .send-message-button:hover {
     cursor: pointer;
     color: #c8292e; }
@@ -43,6 +48,10 @@ body {
     padding: 4px;
     border-radius: 5px;
     font-size: 30px; }
+
+.learn-more-button {
+  background-color: #c8292e;
+  color: #EFEDEF; }
 
 #home-icons .fa {
   color: #c8292e;
@@ -96,10 +105,24 @@ body {
 #about-section,
 #residential-section,
 #commercial-section {
-  margin-top: 65px; }
+  margin-top: 65px;
+  background-color: #EFEDEF; }
 
 .white-underlay {
   background: #FFF; }
+
+#contact-modal .card {
+  background-color: #c8292e;
+  color: #EFEDEF; }
+
+#contact-modal .send-message-button:hover {
+  cursor: pointer;
+  color: #c8292e; }
+
+.learn-more-button:hover {
+  background-color: #EFEDEF;
+  color: #c8292e;
+  box-shadow: 0 0 3px 2px red; }
 
 @media (max-width: 1432px) {
   #home-section {

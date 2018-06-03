@@ -1,10 +1,8 @@
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 
-const config = require('./config');
-const password = config.password;
+const emailer = require('./emailer');
 
 const port = 3000;
 
@@ -41,56 +39,18 @@ app.post('/', (req, res) => {
     console.log('Request received.');
     console.log(req.body);
     
-    const name = req.body.name;
-    const phone = req.body.number;
-    const email = req.body.email;
-    const message = req.body.message;
-
-    //define send email function
-    function sendEmail(req, res) {
-        
-        const transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            auth: {
-                user: 'hobsonelectricinc@gmail.com', // Your email id
-                pass: password // Your password
-            }
-        });
-
-        const html = `
-            <h3>You've Received an Inquiry From ${name}</h3>
-            <p>Name: ${name}</p>
-            <p>Phone Number: ${phone}</p>
-            <p>Email Address: ${email}</p>
-            <p>Message: ${message}</p>
-        `;
-
-        const mailOptions = {
-            from: 'hobsonelectricinc@gmail.com', // sender address
-            to: 'shanehobson1@gmail.com', // list of receivers
-            subject: `New Website Inquiry from ${name}`, // Subject line...New Website Inquiry from ${name}
-            // text: text //, // plaintext body
-            html: html
-        };
-
-        transporter.sendMail(mailOptions, function(error, info) {
-            if(error){
-                console.log(error);
-                res.json({yo: 'error'});
-            }else{
-                console.log('Message sent: ' + info.response);
-                res.json({yo: info.response});
-            };
-        });
-    }
-
     //call send email function
-    sendEmail(req, res);
-
-    //reply to browser so no error message pops up
-    res.send();
+    emailer.sendEmail(req, res);
 });
 
-app.listen(port, function () {
+app.post('/commercial', (req, res) => {
+    console.log('Request received.');
+    console.log(req.body);
+    
+    //call send email function
+    emailer.sendEmail(req, res);
+});
+
+app.listen(port, () => {
     console.log(`Server is up on ${port}`);
 });
