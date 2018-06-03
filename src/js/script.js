@@ -5,7 +5,7 @@ function sendData(data) {
     let urlEncodedDataPairs = []; 
 
     // Turn the data object into an array of URL-encoded key/value pairs.
-    for(item in data) {
+    for(let item in data) {
         urlEncodedDataPairs.push(encodeURIComponent(item) + '=' + encodeURIComponent(data[item]));
     }
 
