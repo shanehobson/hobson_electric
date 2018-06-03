@@ -82,7 +82,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); }
   #map-section p {
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
   #map-section h3, #map-section p {
     color: #EFEDEF; }
   #map-section img {
@@ -144,12 +144,13 @@ body {
   #home-section .learn-more-button {
     display: none; }
   #map-section {
-    min-height: 800px;
+    min-height: 760px;
     background-attachment: scroll; }
-  #about-section,
   #residential-section,
   #commercial-section {
-    min-height: 800px; }
+    min-height: 980px; }
+  #about-section {
+    min-height: 1110px; }
   #main-footer .container {
     margin-top: -130px; } }
 
@@ -170,10 +171,11 @@ body {
     text-shadow: none; }
   #map-section p {
     font-size: 1rem; }
-  #about-section,
   #residential-section,
   #commercial-section {
-    min-height: 1100px; } }
+    min-height: 1200px; }
+  #about-section {
+    min-height: 1300px; } }
 
 @media (max-width: 577px) {
   #home-section .contact-form {
@@ -193,4 +195,6 @@ body {
   #home-section .main-heading {
     font-size: 37px; }
   #map-section {
-    height: 800px; } }
+    height: 800px; }
+  #about-section {
+    min-height: 1350px; } }
