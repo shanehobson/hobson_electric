@@ -1,11 +1,14 @@
+//Variables
 $bg-color: #101320;
 $font-color: #EFEDEF;
 $primary-color: #c8292e;
 $secondary-color: #871C20;
 $medium-overlay: rgba(0, 0, 0, 0.5);
 $dark-overlay: rgba(0, 0, 0, 0.35);
+$white-underlay: #FFF;
 $icon-size: 30px;
 
+//General Styles
 body {
     background: $bg-color;
     color: $font-color;
@@ -21,11 +24,12 @@ body {
     }
 }
 
+//-------Home Page Styles---------//
 #home-section {
-    background: url('../img/bulb4.png') no-repeat;
+    background: url('../img/bulb5.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 -180px;
+    background-position: 00;
     min-height: 750px;
 
     .dark-overlay {
@@ -42,7 +46,7 @@ body {
     }
 
     #hobson strong {
-        text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+        text-shadow: 6px 6px 20px rgba(0, 0, 0, 1);
     }
 
     .home-inner {
@@ -99,9 +103,9 @@ body {
 }
 
 #map-section {
-    background: url('../img/cable-clouds.jpg') no-repeat;
+    background: url('../img/sky.jpg') no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 0 -180px;
     min-height: 450px;
     position: relative;
@@ -130,6 +134,16 @@ body {
         height: 60px;
         
     }
+}
+
+//-------Secondary Pages Styles---------//
+#about-section,
+#residential-section,
+#commercial-section {
+    margin-top: 65px;
+}
+.white-underlay {
+    background: $white-underlay;
 }
 
 // ****************MEDIA QUERIES********************
@@ -172,6 +186,11 @@ body {
         min-height: 800px;
         background-attachment: scroll;
     }
+    #about-section,
+    #residential-section,
+    #commercial-section {
+        min-height: 800px;
+    }
     #main-footer .container {
         margin-top: -130px;
     }
@@ -201,6 +220,11 @@ body {
         #service-map {
             border-right: none;
         }
+    }
+    #about-section,
+    #residential-section,
+    #commercial-section {
+        min-height: 1100px;
     }
 }
 
