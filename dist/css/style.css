@@ -9,6 +9,8 @@ body {
   .navbar #phone-number-button {
     background-color: #101320;
     color: #EAEAEA; }
+  .navbar ul {
+    list-style-type: none; }
 
 .learn-more-button {
   background-color: #c8292e;
