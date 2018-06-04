@@ -176,8 +176,24 @@ body {
 
 @media (max-width: 460px) {
   #home-section .main-heading {
-    font-size: 37px; }
+    font-size: 42px;
+    text-align: left;
+    margin-left: 10px; }
+  #home-section .sub-heading {
+    text-align: left;
+    margin-left: 12px;
+    margin-bottom: -11px; }
   #map-section {
     height: 800px; }
   #about-section {
     min-height: 1350px; } }
+
+@media (max-width: 380px) {
+  #home-section .main-heading {
+    font-size: 40px;
+    margin-left: 7px; } }
+
+@media (max-width: 340px) {
+  #home-section .main-heading {
+    font-size: 35px;
+    margin-left: 10px; } }
