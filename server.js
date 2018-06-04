@@ -8,6 +8,15 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+//Enable CORS
+const allowCrossDomain = (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+}
+app.use(allowCrossDomain);
+
 app.use(express.static(__dirname + '/dist'));
 
 //load homepage
@@ -44,6 +53,22 @@ app.post('/', (req, res) => {
 });
 
 app.post('/commercial', (req, res) => {
+    console.log('Request received.');
+    console.log(req.body);
+    
+    //call send email function
+    emailer.sendEmail(req, res);
+});
+
+app.post('/residential', (req, res) => {
+    console.log('Request received.');
+    console.log(req.body);
+    
+    //call send email function
+    emailer.sendEmail(req, res);
+});
+
+app.post('/about', (req, res) => {
     console.log('Request received.');
     console.log(req.body);
     
