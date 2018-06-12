@@ -1,8 +1,4 @@
 const express = require('express');
-const fs = require('fs');
-const bodyParser = require('body-parser');
-
-const emailer = require('./emailer');
 
 const port = process.env.PORT || 3000;
 
@@ -37,43 +33,6 @@ app.get('/commercial', (req, res) => {
 //load residential page
 app.get('/residential', (req, res) => {
     res.send('residential.html');
-});
-
-//middleware for parsing request body
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-
-//handler to respond to post request from client & send email
-app.post('/', (req, res) => {
-    console.log('Request received.');
-    console.log(req.body);
-    
-    //call send email function
-    emailer.sendEmail(req, res);
-});
-
-app.post('/commercial', (req, res) => {
-    console.log('Request received.');
-    console.log(req.body);
-    
-    //call send email function
-    emailer.sendEmail(req, res);
-});
-
-app.post('/residential', (req, res) => {
-    console.log('Request received.');
-    console.log(req.body);
-    
-    //call send email function
-    emailer.sendEmail(req, res);
-});
-
-app.post('/about', (req, res) => {
-    console.log('Request received.');
-    console.log(req.body);
-    
-    //call send email function
-    emailer.sendEmail(req, res);
 });
 
 app.listen(port, () => {
