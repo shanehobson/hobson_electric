@@ -24,7 +24,7 @@ function sendData(data) {
     });
 
     // Set up our request
-    XHR.open('POST', 'https://git.heroku.com/gentle-savannah-37154.git'); 
+    XHR.open('POST', 'https://gentle-savannah-37154.herokuapp.com/'); 
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
