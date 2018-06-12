@@ -6,7 +6,7 @@ const babelPolyfill = require('babel-polyfill');
 
 //Compile SASS and Inject Into browser
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'dist/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
     .pipe(sass())
     .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
@@ -25,7 +25,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./dist"
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'dist/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
 
