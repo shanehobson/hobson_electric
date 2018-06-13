@@ -66,17 +66,17 @@ document.querySelector('.customer-contact-form').addEventListener('submit', e =>
 });
 
 //Handle Pop Up Contact Form on Home Page
-function handlePopUp (button) {
-    if (button) {
-        button.addEventListener('click', () => {
-            const contactForm = document.querySelector('.contact-form');
-            contactForm.classList.toggle('d-xl-block');
-            button.classList.toggle('d-xl-inline-block');
-        });
-    }
-}
+// function handlePopUp (button) {
+//     if (button) {
+//         button.addEventListener('click', () => {
+//             const contactForm = document.querySelector('.contact-form');
+//             contactForm.classList.toggle('d-xl-block');
+//             button.classList.toggle('d-xl-inline-block');
+//         });
+//     }
+// }
 
-handlePopUp(document.getElementById('pop-up-opener'));
+// handlePopUp(document.getElementById('pop-up-opener'));
 
 
 
