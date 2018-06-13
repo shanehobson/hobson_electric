@@ -26,7 +26,7 @@ function sendData(data) {
     });
 
     // Set up our request
-    XHR.open('POST', 'https://gentle-savannah-37154.herokuapp.com/');
+    XHR.open('POST', 'https://boiling-wildwood-70104.herokuapp.com/');
 
     // Add the required HTTP header for form data POST requests
     XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
