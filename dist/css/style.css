@@ -2,6 +2,14 @@
 body {
   background: #101320;
   color: #EFEDEF; }
+.learn-more-button {
+  background-color: #c8292e;
+  color: #EFEDEF; }
+
+.learn-more-button:hover {
+  background-color: #EFEDEF;
+  color: #c8292e;
+  box-shadow: 0 0 3px 2px red; }
 
   /* Navbar */
 .navbar {
