@@ -38,7 +38,6 @@ function sendData(data) {
 //Event Listener for Form Submit
 document.querySelector('.customer-contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
-    // console.log(e);
 
     //Create variables for form elements
     var nameInput = document.getElementById('form-name');
@@ -65,16 +64,3 @@ document.querySelector('.customer-contact-form').addEventListener('submit', func
         message: message
     });
 });
-
-//Handle Pop Up Contact Form on Home Page
-// function handlePopUp (button) {
-//     if (button) {
-//         button.addEventListener('click', () => {
-//             const contactForm = document.querySelector('.contact-form');
-//             contactForm.classList.toggle('d-xl-block');
-//             button.classList.toggle('d-xl-inline-block');
-//         });
-//     }
-// }
-
-// handlePopUp(document.getElementById('pop-up-opener'));
