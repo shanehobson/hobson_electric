@@ -27,7 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.4",
     "express": "^4.16.4",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^7.0.1",
     "gulp-sass": "^4.0.1"
   }
