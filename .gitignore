@@ -1,1 +1,11 @@
 node_modules/
+
+# CDK
+infra/cdk.out/
+infra/cdk-outputs.json
+infra/*.js
+infra/*.d.ts
+infra/bin/*.js
+infra/bin/*.d.ts
+infra/lib/*.js
+infra/lib/*.d.ts
