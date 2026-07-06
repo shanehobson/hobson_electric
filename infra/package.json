@@ -1,0 +1,27 @@
+{
+  "name": "hobson-electric-infra",
+  "version": "0.1.0",
+  "private": true,
+  "bin": {
+    "hobson-electric-infra": "bin/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "diff": "cdk diff",
+    "destroy": "cdk destroy"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "aws-cdk": "^2.1031.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.220.0",
+    "constructs": "^10.4.2",
+    "source-map-support": "^0.5.21"
+  }
+}
